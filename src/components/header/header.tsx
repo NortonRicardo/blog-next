@@ -13,7 +13,7 @@ export function Header() {
             <ActiveLink href="/">Home</ActiveLink>
             <ActiveLink href="/blog">Blog</ActiveLink>
 
-            <Button variant="secondary" className="rounded-2xl" asChild>
+            <Button variant="default" className="rounded-2xl" asChild>
               <Link href="/comecar">Começar</Link>
             </Button>
           </nav>
