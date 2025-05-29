@@ -36,6 +36,26 @@
   --sidebar-accent-foreground: oklch(0.21 0.034 264.665);
   --sidebar-border: oklch(0.928 0.006 264.531);
   --sidebar-ring: oklch(0.707 0.022 261.325);
+
+  /* cores personalizadas */
+  --color-white: #FFFFFF;
+  --color-blue-100: #7EA4D7;
+  --color-blue-200: #2C85FC;
+  --color-blue-300: #2266C1;
+  --color-blue-400: #0D284C;
+  
+  --color-cyan-100: #2DEBFC;
+  --color-cyan-200: #187D86;
+  --color-cyan-300: #0E474C;
+
+  --color-gray-100: #F9FAFC;
+  --color-gray-200: #D3D5D9;
+  --color-gray-300: #93979F;
+  --color-gray-400: #20242C;
+  --color-gray-500: #16181D;
+  --color-gray-600: #14161A;
+  --color-gray-700: #101216;
+  --color-gray-800: #0B0C0F;
 }
 
 @theme inline {
@@ -131,5 +151,55 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+@layer components {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 100%;
+  }
+
+  @media (min-width: 1536px) {
+    .container {
+      max-width: 1200px;
+    }
+  }
+}
+
+@layer utilities {
+  .rounded-lg {
+    border-radius: 0.5rem;
+  }
+  .rounded-md {
+    border-radius: calc(0.5rem - 2px);
+  }
+  .rounded-sm {
+    border-radius: calc(0.5rem - 4px);
+  }
+
+  .text-heading-hg { font-size: 40px; line-height: 120%; font-weight: 700; }
+  .text-heading-xl { font-size: 32px; line-height: 120%; font-weight: 700; }
+  .text-heading-lg { font-size: 28px; line-height: 120%; font-weight: 700; }
+  .text-heading-md { font-size: 24px; line-height: 120%; font-weight: 700; }
+  .text-heading-sm { font-size: 20px; line-height: 120%; font-weight: 700; }
+  .text-heading-xs { font-size: 16px; line-height: 120%; font-weight: 700; }
+  
+  .text-body-md { font-size: 16px; line-height: 150%; font-weight: 400; }
+  .text-body-sm { font-size: 14px; line-height: 150%; font-weight: 400; }
+  .text-body-xs { font-size: 12px; line-height: 150%; font-weight: 400; }
+
+  .text-action-md { font-size: 16px; line-height: normal; font-weight: 500; }
+  .text-action-sm { font-size: 14px; line-height: normal; font-weight: 500; }
+}
+
+@layer base {
+  .font-sans {
+    font-family: 'PT Sans Caption', sans-serif;
+  }
+  .font-inter {
+    font-family: 'Inter', sans-serif;
   }
 }
