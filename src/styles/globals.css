@@ -193,6 +193,8 @@ body {
 
   .text-action-md { font-size: 16px; line-height: normal; font-weight: 500; }
   .text-action-sm { font-size: 14px; line-height: normal; font-weight: 500; }
+
+  .text-body-tag { font-size: 12px; line-height: 100%; font-weight: 400; }
 }
 
 @layer base {
