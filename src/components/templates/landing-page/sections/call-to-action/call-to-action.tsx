@@ -2,7 +2,7 @@ import { ArrowRight, Store } from 'lucide-react'
 // eslint-disable-next-line camelcase
 import { PT_Sans_Caption } from 'next/font/google'
 import Link from 'next/link'
-import { Button } from '../ui/button'
+import { Button } from '../../../../ui/button'
 
 const ptSansCaption = PT_Sans_Caption({
   subsets: ['latin'],
@@ -16,7 +16,7 @@ export const CallToAction = () => {
 
       <div className="container relative">
         <div className="flex flex-col items-center gap-6 text-center">
-          <div className="p-4 bg-cyan-300 w-fit rounded-full">
+          <div className="absolute top-0 left-1/2 -translate-y-32 -translate-x-1/2 p-4 bg-cyan-300 w-fit rounded-full">
             <Store className="text-cyan-100" />
           </div>
 
